@@ -11,9 +11,9 @@ all:
 	#main
 	gcc -m32 -o main main.c addition subtraction multiplication division set_round exception_handling
 	#testing
-	./main 1 / 9
-	./main 1 / 9 0
-	./main 1 / 9 1
-	./main 1 / 9 2
-	./main 1 / 9 3
+	./main 1.23 x 3.445
+	./main 1.23 x 3.445 0
+	./main 1.23 x 3.445 1
+	./main 1.23 x 3.445 2
+	./main 1.23 x 3.445 3
 

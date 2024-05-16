@@ -33,19 +33,19 @@ int main(int argc, char *argv[]) {
 
   switch (operator) {
     case '+': {
-      printf("Result: %.10f\n", addition(number1, number2));
+      printf("Result: %f\n", addition(number1, number2));
       break;
     }
     case '-': {
-      printf("Result: %.10f\n", subtraction(number1, number2));
+      printf("Result: %f\n", subtraction(number1, number2));
       break;
     }
     case 'x': {
-      printf("Result: %.10f\n", multiplication(number1, number2));
+      printf("Result: %f\n", multiplication(number1, number2));
       break;
     }
     case '/': {
-      printf("Result: %.10f\n", division(number1, number2));
+      printf("Result: %f\n", division(number1, number2));
       break;
     }
   }
