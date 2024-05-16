@@ -1,11 +1,11 @@
 section .data
 section .data
-invalid_operation db 'Warning: Invalid operation', 10, 0
-denormal_operand db 'Warning: Denormal operand', 10, 0
-divide_by_zero db 'Warning: Divide by zero', 10, 0
-numeric_overflow db 'Warning: Numeric overflow', 10, 0
-numeric_underflow db 'Warning: Numeric underflow', 10, 0
-inexact_result db 'Warning: Inexact result (Precision)', 10, 0
+invalid_operation db 'Warning: Invalid operation', 10, 0        ;sprawdzone
+denormal_operand db 'Warning: Denormal operand', 10, 0          ;sprawdzone
+divide_by_zero db 'Warning: Divide by zero', 10, 0              ;sprawdzone
+numeric_overflow db 'Warning: Numeric overflow', 10, 0          ;sprawdzone
+numeric_underflow db 'Warning: Numeric underflow', 10, 0        ;sprawdzone
+inexact_result db 'Warning: Inexact result (Precision)', 10, 0  ;sprawdzone
 
 section .text
 extern printf
@@ -14,8 +14,6 @@ global exception_handling
 
 exception_handling:
     enter 0,0
-    ;fstsw ax
-    ;and ax, 111111b
 
         .invalid_operation:
         fstsw ax

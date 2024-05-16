@@ -16,28 +16,28 @@ set_round:
 
 	.nearest
     sub esp, 2
-    mov word [esp], 0x023F
+    mov word [esp], 0x033F
     fldcw [esp]
     add esp, 2
     jmp .end
 
     .up
     sub esp, 2
-    mov word [esp], 0x0A3F
+    mov word [esp], 0x0B3F
     fldcw [esp]
     add esp, 2
     jmp .end
 
     .down
     sub esp, 2
-    mov word [esp], 0x063F
+    mov word [esp], 0x073F
     fldcw [esp]
     add esp, 2
     jmp .end
 
     .zero
     sub esp, 2
-    mov word [esp], 0x0E3F
+    mov word [esp], 0x0F3F
     fldcw [esp]
     add esp, 2
     jmp .end

@@ -33,22 +33,21 @@ int main(int argc, char *argv[]) {
 
   switch (operator) {
     case '+': {
-      printf("Result: %f\n", addition(number1, number2));
+      printf("Result: %f\n\n", addition(number1, number2));
       break;
     }
     case '-': {
-      printf("Result: %f\n", subtraction(number1, number2));
+      printf("Result: %f\n\n", subtraction(number1, number2));
       break;
     }
     case 'x': {
-      printf("Result: %f\n", multiplication(number1, number2));
+      printf("Result: %f\n\n", multiplication(number1, number2));
       break;
     }
     case '/': {
-      printf("Result: %f\n", division(number1, number2));
+      printf("Result: %f\n\n", division(number1, number2));
       break;
     }
   }
-  exception_handling();
   return 0;
 }
